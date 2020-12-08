@@ -20,13 +20,13 @@ export class LoginComponent implements OnInit {
 
   authForm: any = {};
   isSubmitted: boolean = false;
-  remember: boolean = false;
+//   remember: boolean = false;
 
   ngOnInit() {
     this.authForm = this.formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.required],
-      remember: ['', Validators.required],
+//       remember: ['', Validators.required],
     });
   }
 
