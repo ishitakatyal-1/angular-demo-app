@@ -1,0 +1,24 @@
+<h1 style="text-align:center">
+    Angular 9 Demo-App
+  </h1>
+  <div class="login">
+    <h2 class="login-header">Log in Form</h2>
+    <form [formGroup]="authForm" class="login-container" (ngSubmit)="signIn()">
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+        <input type="email" autofocus="autofocus" placeholder="Username" formControlName="email">
+      </p>
+      <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+        <div *ngIf="formControls.email.errors.required">Username is required</div>
+      </div>
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input type="password" placeholder="Password" formControlName="password">
+      </p>
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">Password is required</div>
+      </div>
+      <p>
+        <input type="submit" value="Sign in">
+      </p>
+      <a href="#">Create an account</a>
+    </form>
+  </div>
