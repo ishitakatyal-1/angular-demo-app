@@ -12,7 +12,7 @@ const GRAPH_ENDPOINT = 'https://graph.microsoft.com/v1.0/me';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-  admin;
+  admin: any;
   constructor(
     private authService: AuthService, private router: Router, private msalServie: MsalService, private http: HttpClient
   ) { }

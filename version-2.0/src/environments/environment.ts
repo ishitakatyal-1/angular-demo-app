@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  clientId: 'e93e3c7d-3a9a-4a90-8d98-b412ae9e59f5',
+  clientId: '465d72e3-97f3-4385-899f-de363dd8c88b',
   authority: 'https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/',
   redirectUrl: 'http://localhost:4200/login'
 };
